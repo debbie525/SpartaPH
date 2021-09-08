@@ -9,17 +9,20 @@ Essentially, rearrange the digits to create the highest possible number.
 '''
 #def descending(mynum):
 num = input('Please enter an integer:')
-print(num)
+print('Your number is: ' + num)
 
 num_list = []
 for item in num:
     num_list.append(int(item))
-print(num_list)
-descend=sorted(num_list, reverse=True)
-print(descend)
+#print(num_list)
+descend_list=sorted(num_list, reverse=True)
 
+#print(descend_list)
 
-for item in descend:
-    print(item)
+final_output = ''
+for item in descend_list:
+    final_output += str(item)
+print ('Sorted in Descending Order: ' + final_output)
+
 
 
